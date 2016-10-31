@@ -26,7 +26,7 @@ published: true
 ## Basic Framework of End to End Memory Network
 
 基于上面的描述，其实并不难想象记忆网络的基本结构,如下图所示：
-![End2End Memory Network]({{site.baseurl}}/images/end2end Memory Network.png size=60%)
+![End2End Memory Network]({{site.baseurl}}/images/end2end Memory Network.png size=20%)
 
 图(a)中表示的是一个单层的记忆网络，图(b)则表示一个多层的记忆网络
 
