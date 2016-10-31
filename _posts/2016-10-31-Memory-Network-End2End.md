@@ -81,10 +81,10 @@ Bob went to the kitchen.
 
 非端到端的记忆网络(Memory Network)其实也并不复杂，与我们上面表述的区别在于，在选择相关fact的时候并不是采用加权和的方法合成得到相应的输出记忆向量，而是直接选取最相关的一个向量来作为输出，如下面公式所示：
 
-![rea.png]({{site.baseurl}}/_posts/rea.png)
+![rea.png]({{site.baseurl}}/images/rea.png)
 
 在获得了相应的推理结果之后，第二次推理则基于第一次推理的基础之上，再次搜索最相关的记忆。
-![rea2.png]({{site.baseurl}}/_posts/rea2.png)
+![rea2.png]({{site.baseurl}}/images/rea2.png)
 
 虽然从理解上，这样做更加直观，但是带来的不利因素是，这导致整个模型是不可导的，并且必须一步步的根据正确的中间记忆（事实，fact）来一步步的训练网络，这是不现实的。这种做法在注意力模型中叫做硬性注意(hard-attention)，而为了克服整个模型不可导的缺点这里改成使用软性注意(soft-attention)，同时也是端到端记忆网络的最关键创新。 
 
