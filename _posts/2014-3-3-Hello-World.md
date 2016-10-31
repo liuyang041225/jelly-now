@@ -1,7 +1,18 @@
 ---
 layout: post
 title: You're up and running!
+published: true
 ---
+##__> We loved with a love that was more than love
+
+-1.
+
+###****dad f如果 我这么做的话 我不知道会有什么结果
+
+###
+
+###
+
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
 
