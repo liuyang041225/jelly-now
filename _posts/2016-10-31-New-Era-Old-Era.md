@@ -1,10 +1,10 @@
 ---
 layout: post
-title: You're up and running!
+title: '新时代,旧时代'
+published: true
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
+在即将过去的2016年，我发现以前可能需要很多年的进步，现在正在以天为基本单位不断产生着，这使得我倍感压力。
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+
