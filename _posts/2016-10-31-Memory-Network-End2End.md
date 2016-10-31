@@ -13,7 +13,7 @@ published: true
 比如，在对话应用中，John与对话机器人Robt进行交谈，John的第n轮发言，显然与前n-1轮的对话内容有一定的联系（请注意这是一个假设），理由非常简单，在前n-1轮对话中，John显式或者隐式的提供了关于自己的信息，这些信息包括了他交谈的目的，他自身的兴趣，他提出的补充条件等（aim, interest, condition）。如下图所示：
 ![Example]({{site.baseurl}}/_posts/dialog.png)
 
-* John与Robt的对话发生在上图提示的Short-Term Memories中，在第1轮的交流中，我们知道John想要找一部电影来打发晚上的时光(c)，而
+* John与Robt的对话发生在上图提示的Short-Term Memories中，在第1轮的交流中，我们知道John想要找一部电影来打发晚上的时光(c)$asdf$，而
 
 ## Memory Network
 记忆网络是Facebook AI Research提出的一个主要应用在Question Answersing(Q&A)任务中的网络，其原理比较简单明了，
@@ -23,7 +23,3 @@ published: true
 
 
 ![End2End Memory Network]({{site.baseurl}}/_posts/end2end Memory Network.png)
-
-
-
-
