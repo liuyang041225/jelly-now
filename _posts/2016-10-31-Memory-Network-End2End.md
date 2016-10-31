@@ -28,6 +28,7 @@ published: true
 基于上面的描述，其实并不难想象记忆网络的基本结构,如下图所示：
 ![End2End Memory Network]({{site.baseurl}}/_posts/end2end Memory Network.png)
 
+图（a）中表示的是一个单层的记忆网络，图(b)则表示一个多层的记忆网络
 
 
 
