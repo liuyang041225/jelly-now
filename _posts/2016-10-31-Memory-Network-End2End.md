@@ -21,7 +21,12 @@ published: true
 
 * 记忆网络具有一个记忆组件可以对记忆进行读、写操作 (Class of Model that combine large memory with learning component that can **read** and **write** to it)
 * 记忆网络实现了对记忆组件中内容的选择性关注，并基于这些选择性关注的内容进行推理 (Incorporates **reasoning** with **attention** over **memory** (RAM))
-* 
+* 大多数机器学习算法具有一个有限的记忆，而这些记忆对一些低级的任务实际上已经足够。(参考，RNN系列模型的长短时记忆对分类的影响)
+
+基于上面的描述，其实并不难想象记忆网络的基本结构,如下图所示：
+![End2End Memory Network]({{site.baseurl}}/_posts/end2end Memory Network.png)
+
+
 
 ## Memory Network
 记忆网络是Facebook AI Research提出的一个主要应用在Question Answersing(Q&A)任务中的网络，其原理比较简单明了，
@@ -30,4 +35,4 @@ published: true
 
 
 
-![End2End Memory Network]({{site.baseurl}}/_posts/end2end Memory Network.png)
+
