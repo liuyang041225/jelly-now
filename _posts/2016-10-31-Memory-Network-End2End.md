@@ -11,7 +11,7 @@ published: true
 从技术路线来说，**端到端记忆网络**来自于**记忆网络**( J. Weston, S. Chopra, and A. Bordes. Memory networks. In International Conference on Learning Representations (ICLR), 2015)。准确地说，端到端记忆网络是记忆网络的一个改良版本。记忆网络的出现主要是为了解决一些依赖于（Long Term/Short Term,长期以及短期）记忆内容依赖的应用。
 
 比如，在对话应用中，John与对话机器人Robt进行交谈，John的第n轮发言，显然与前n-1轮的对话内容有一定的联系（请注意这是一个假设），理由非常简单，在前n-1轮对话中，John显式或者隐式的提供了关于自己的信息，这些信息包括了他交谈的目的，他自身的兴趣，他提出的补充条件等（aim, interest, condition）。如下图所示：
-![Example]({{site.baseurl}}/images/dialog.png )
+![Example]({{site.baseurl}}/images/dialog.png)
 
 * John与Robt的对话发生在上图提示的Short-Term Memories中，在第1轮的交流中，我们知道John想要找一部电影来打发晚上的时光(c)，系统回应(response)则推荐电影Shaolin Soccer给John。
 * John回复Shaolin Soccer以及Kung Fu Hustle他已经看过，他想要看更多Stephen Chow的电影。
@@ -34,8 +34,7 @@ published: true
 
 如图(a)中所示，我们输入一系列的句子作为输入，即x1,...,xi作为我们需要记忆的上下文（语境），每一个句子数据输入xi都保存其对应的句向量(sentence embedding)到记忆区域中(mi)，这样我们就得到了关于上下文的记忆表达(memory)，所以简单来说我们仅仅是将我们见过的句子保存到了记忆组件中(history sentences)。
 
-这时，John向模型提出了一个新问句question，同样，我们将其转化为句向量。接下来，我们需要知道的是，对于当前的问题，我们记忆区间中，哪些句子可以用来回答这个问题，或者与这个问题相关？<font color="green">颜色</font> 
-$$ a^2 + b^2 = c^2 $$
+这时，John向模型提出了一个新问句question，同样，我们将其转化为句向量。接下来，我们需要知道的是，对于当前的问题，我们记忆区间中，哪些句子可以用来回答这个问题，或者与这个问题相关？
 
 ### 根据输入选择与输入问句相关的记忆
 
