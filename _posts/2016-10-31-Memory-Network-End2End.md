@@ -1,10 +1,10 @@
 ---
 layout: post
-title: '新时代,旧时代'
+title: Memory Network End2End
 published: true
 ---
 
-在即将过去的2016年，我发现以前可能需要很多年的进步，现在正在以天为基本单位不断产生着，这使得我倍感压力。
+## Memory Network End2End
 
-
+在介绍端到端记忆网络(Memory Network)之前，我想先介绍一下这个技术为什么会出现，以及该技术是为了解决怎样的问题。
 
