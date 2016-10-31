@@ -78,7 +78,7 @@ Bob went to the kitchen.
 
 而如何根据句子输入生成mi的具体实现，有多种选择例如卷积神经网络（CNN），多层卷积神经网络，递归神经网络（RNN，GRU，LSTM，Bi-directional RNN)。
 
-## 与非端到端记忆网络的对比
+## Comparing with Native Memory Network
 
 非端到端的记忆网络(Memory Network)其实也并不复杂，与我们上面表述的区别在于，在选择相关fact的时候并不是采用加权和的方法合成得到相应的输出记忆向量，而是直接选取最相关的一个向量来作为输出，如下面公式所示：
 
@@ -108,6 +108,10 @@ Bob went to the kitchen.
 ## 代码与实例
 
 
+
+## Further Reading
+
+Key-Value Memory Network 
 
 ## 参考文献
 J. Weston, S. Chopra, and A. Bordes. Memory networks. In International Conference on Learning Representations (ICLR), 2015
