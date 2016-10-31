@@ -11,7 +11,7 @@ published: true
 从技术路线来说，**端到端记忆网络**来自于**记忆网络**( J. Weston, S. Chopra, and A. Bordes. Memory networks. In International Conference on Learning Representations (ICLR), 2015)。准确地说，端到端记忆网络是记忆网络的一个改良版本。记忆网络的出现主要是为了解决一些依赖于（Long Term/Short Term,长期以及短期）记忆内容依赖的应用。
 
 比如，在对话应用中，John与对话机器人Robt进行交谈，John的第n轮发言，显然与前n-1轮的对话内容有一定的联系（请注意这是一个假设），理由非常简单，在前n-1轮对话中，John显式或者隐式的提供了关于自己的信息，这些信息包括了他交谈的目的，他自身的兴趣，他提出的补充条件等（aim, interest, condition）。如下图所示：
-![Example]({{site.baseurl}}/_posts/dialog.png)
+![Example]({{site.baseurl}}/images/dialog.png)
 
 * John与Robt的对话发生在上图提示的Short-Term Memories中，在第1轮的交流中，我们知道John想要找一部电影来打发晚上的时光(c)，系统回应(response)则推荐电影Shaolin Soccer给John。
 * John回复Shaolin Soccer以及Kung Fu Hustle他已经看过，他想要看更多Stephen Chow的电影。
@@ -26,7 +26,7 @@ published: true
 ## Basic Framework of End to End Memory Network
 
 基于上面的描述，其实并不难想象记忆网络的基本结构,如下图所示：
-![End2End Memory Network]({{site.baseurl}}/_posts/end2end Memory Network.png)
+![End2End Memory Network]({{site.baseurl}}/images/end2end Memory Network.png)
 
 图(a)中表示的是一个单层的记忆网络，图(b)则表示一个多层的记忆网络
 
@@ -39,7 +39,7 @@ published: true
 ### 根据输入选择与输入问句相关的记忆
 
 为了达到这个目的，直接采用了类似于注意力模型的方法(attention mechasim)，来计算每一个记忆块与问句的相关程度，其公式如下：
-![att.png]({{site.baseurl}}/_posts/att.png)
+![att.png]({{site.baseurl}}/images/att.png)
 
 其目的在于使用输入的问句向量与每一个记忆块mi计算一个分数，而这个分数就是mi与问句的相关程度，在原文中表达为与问句q的概率相关度，因为根据softmax约束，所有mi的分数相加等于一，符合概率描述的特点。
 
@@ -81,10 +81,10 @@ Bob went to the kitchen.
 
 非端到端的记忆网络(Memory Network)其实也并不复杂，与我们上面表述的区别在于，在选择相关fact的时候并不是采用加权和的方法合成得到相应的输出记忆向量，而是直接选取最相关的一个向量来作为输出，如下面公式所示：
 
-![rea.png]({{site.baseurl}}/_posts/rea.png)
+![rea.png]({{site.baseurl}}/images/rea.png)
 
 在获得了相应的推理结果之后，第二次推理则基于第一次推理的基础之上，再次搜索最相关的记忆。
-![rea2.png]({{site.baseurl}}/_posts/rea2.png)
+![rea2.png]({{site.baseurl}}/images/rea2.png)
 
 虽然从理解上，这样做更加直观，但是带来的不利因素是，这导致整个模型是不可导的，并且必须一步步的根据正确的中间记忆（事实，fact）来一步步的训练网络，这是不现实的。这种做法在注意力模型中叫做硬性注意(hard-attention)，而为了克服整个模型不可导的缺点这里改成使用软性注意(soft-attention)，同时也是端到端记忆网络的最关键创新。 
 
