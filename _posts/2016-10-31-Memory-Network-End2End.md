@@ -110,5 +110,6 @@ Bob went to the kitchen.
 
 ## 参考文献
 J. Weston, S. Chopra, and A. Bordes. Memory networks. In International Conference on Learning Representations (ICLR), 2015
+
 Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, Rob Fergus. End-To-End Memory Networks. Conference on Neural Information Processing Systems (NIPS), 2015
 
