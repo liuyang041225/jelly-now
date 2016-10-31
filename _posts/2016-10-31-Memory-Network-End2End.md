@@ -66,7 +66,7 @@ Bob went to the kitchen.
 
 **Where is the football?  **
 
-为了回答where is the football？根据我们上面描述的网络，我们最先得到的推理的输出，应该与John picked up the football有关，因为这与问句有直接联系。而如果我们只有一层推理层，那么很难回答目前football的位置问题。如果再一次加上一个推理层，我们就得到了John is in the playground。这明显有利于我们得到正确答案。
+为了回答where is the football？根据我们上面描述的网络，我们最先得到的推理的输出，应该与John picked up the football有关，因为这与问句有直接联系。而如果我们只有一层推理层，那么很难回答目前football的位置问题。如果再一次加上一个推理层，我们就得到了John is in the playground。这明显有利于我们得到正确答案。<font color="green">颜色<font> 
 
 所以往往，我们的推理层数与给出的记忆（事实）有密切关系。
 
