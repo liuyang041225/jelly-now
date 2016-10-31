@@ -38,7 +38,7 @@ published: true
 
 在这个模型中，直接采用了类似于注意力模型的方法(attention mechasim)，来计算每一个记忆块与问句的相关程度，其公式如下：
 
-$$ 5+5 $$
+
 
 
 记忆网络是Facebook AI Research提出的一个主要应用在Question Answersing(Q&A)任务中的网络，其原理比较简单明了，
