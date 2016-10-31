@@ -63,6 +63,7 @@ John is in the playground.
 Bob is in the office.
 John picked up the football.
 Bob went to the kitchen.
+
 **Where is the football?  **
 
 为了回答where is the football？根据我们上面描述的网络，我们最先得到的推理的输出，应该与John picked up the football有关，因为这与问句有直接联系。而如果我们只有一层推理层，那么很难回答目前football的位置问题。如果再一次加上一个推理层，我们就得到了John is in the playground。这明显有利于我们得到正确答案。
@@ -106,6 +107,8 @@ Bob went to the kitchen.
 ## 代码与实例
 
 
+
 ## 参考文献
 J. Weston, S. Chopra, and A. Bordes. Memory networks. In International Conference on Learning Representations (ICLR), 2015
+Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, Rob Fergus. End-To-End Memory Networks. Conference on Neural Information Processing Systems (NIPS), 2015
 
