@@ -13,7 +13,15 @@ published: true
 比如，在对话应用中，John与对话机器人Robt进行交谈，John的第n轮发言，显然与前n-1轮的对话内容有一定的联系（请注意这是一个假设），理由非常简单，在前n-1轮对话中，John显式或者隐式的提供了关于自己的信息，这些信息包括了他交谈的目的，他自身的兴趣，他提出的补充条件等（aim, interest, condition）。如下图所示：
 ![Example]({{site.baseurl}}/_posts/dialog.png)
 
-* John与Robt的对话发生在上图提示的Short-Term Memories中，在第1轮的交流中，我们知道John想要找一部电影来打发晚上的时光(c)$asdf$，而
+* John与Robt的对话发生在上图提示的Short-Term Memories中，在第1轮的交流中，我们知道John想要找一部电影来打发晚上的时光(c)，系统回应(response)则推荐电影Shaolin Soccer给John。
+* John回复Shaolin Soccer以及Kung Fu Hustle他已经看过，他想要看更多Stephen Chow的电影。
+* **系统的任务就是在已知上面事实已经发生的情况下，返回给John一个比较合理的答案。**
+
+如何实现具备这种功能的模型？这显然有别于我们在之前的内容中讨论的各种神经网络（CNN,LSTM,GRU，etc），就从原理上来说，**这些深度网络结构提供的主要是从数据中学习到更好表达的功能**(Learning better represetation from data)，而显然我们需要的是具备寻找相关事实，并进行基本推理的模型。记忆网络(Memory Networks)便提供了这些功能，因为：
+
+* 记忆网络具有一个记忆组件可以对记忆进行读、写操作 (Class of Model that combine large memory with learning component that can **read** and **write** to it)
+* 记忆网络实现了对记忆组件中内容的选择性关注，并基于这些选择性关注的内容进行推理 (Incorporates **reasoning** with **attention** over **memory** (RAM))
+* 
 
 ## Memory Network
 记忆网络是Facebook AI Research提出的一个主要应用在Question Answersing(Q&A)任务中的网络，其原理比较简单明了，
