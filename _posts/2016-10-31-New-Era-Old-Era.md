@@ -16,9 +16,9 @@ published: true
 我对自己博客的要求是尽量不要胡说八道，至少我打上来的字是经过我思考，考证过的，即使是推测我也会给出实际的理由，同时，如果我写错了，我自己发现了也会改正，反正不出版，博客上的东西就永远不是最终版。
 
 说完了这些，基本我是一个什么样的人，你大概也已经清楚了，所以就以一句高格调的话作为开头。
-### **
-And God said, Let there be light: and there was light 上帝说：要有光，于是便有了光
-                                          ——— Genesis （1:3） 创世纪 (1:3) **
+
+**And God said, Let there be light: and there was light 上帝说：要有光，于是便有了光**
+                                         ** ——— Genesis （1:3） 创世纪 (1:3)**
 
 我觉得这句话作为我
                                           
