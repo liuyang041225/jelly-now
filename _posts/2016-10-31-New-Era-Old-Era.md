@@ -20,7 +20,13 @@ published: true
 **And God said, Let there be light: and there was light 上帝说：要有光，于是便有了光**
                                          ** ——— Genesis （1:3） 创世纪 (1:3)**
 
-我觉得这句话作为我
+我觉得这句话作为我接下来所有博文的开头最合适不过。
+
+
+
+## 人工智能的一页
+
+
                                           
                                           
 
