@@ -33,12 +33,6 @@ read from memory and write to the memory
 memory可以用于记忆我们关系的状态，上下文，那么同样也可以同于记忆样本(参考matching network: one-shot learning)，其memory中记忆的是与样本直接相关的信息。
 
 
-## End to End training your Memory Network
-
-在介绍**端到端记忆网络**(End to End Memory Network)之前，我想先介绍一下这个技术为什么会出现，以及该技术是为了解决怎样的问题。
-
-
-
 
 
 
