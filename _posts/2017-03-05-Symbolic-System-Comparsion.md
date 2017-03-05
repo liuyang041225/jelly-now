@@ -15,9 +15,9 @@ published: false
 ## how to backward? automatic?
 
 
-## multiple gpu supported?
+## multiple gpu supported? how?
 
-
+## 
 
 
 ## extend memory as a history status keeper 
