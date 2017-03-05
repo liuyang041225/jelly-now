@@ -7,8 +7,16 @@ published: false
 
 ## how to build graph?
 
+# varaiable 
+
+# function
+
+
+
 
 ## how to backward? automatic?
+
+
 
 
 
