@@ -2,8 +2,13 @@
 published: false
 ---
 
-## Why Memory ?
-最近的研究倾向于向神经网络中增加记忆部件来提升原本神经网络的效能。
+## What is Symbolic System? 
+
+
+## how to build graph?
+
+
+## how to backward? automatic?
 
 
 
