@@ -12,10 +12,10 @@ published: false
 # function
 
 
-
-
 ## how to backward? automatic?
 
+
+## multiple gpu supported?
 
 
 
