@@ -8,7 +8,7 @@ such as theano, tensorflow and pytorch
 
 ## speed 
 
-complied 
+complied: pytorch is fast
 
 ## how to build graph?
 
