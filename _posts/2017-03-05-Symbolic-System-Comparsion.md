@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Symbolic System Comparsion
-published: true
+published: False
 ---
 
 ## What is Symbolic System? 
