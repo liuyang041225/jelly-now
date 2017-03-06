@@ -1,5 +1,5 @@
 ---
-published: false
+published: True
 ---
 
 ## What is Symbolic System? 
