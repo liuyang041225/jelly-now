@@ -15,9 +15,14 @@ complied: theano and tensorflow clearly need a complied process to implement the
 
 ## how to build graph?
 
-# varaiable 
+pytorch : how to check the graph? 
+variable.creator (input,_function_,output) --> previous_function
+the pytorch is a python framework based on c_api, which makes it faster than other framework
 
-# function
+
+## varaiable 
+
+## function
 
 
 ## how to backward? automatic?
@@ -25,11 +30,10 @@ complied: theano and tensorflow clearly need a complied process to implement the
 
 ## multiple gpu supported? how?
 
+
+
 ## Chain
 
 ## Dynamic Graph vs Static Graph
 
-
-
-
-
+scan vs. loop
